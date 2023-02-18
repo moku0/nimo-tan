@@ -111,7 +111,9 @@
    
 **■ ER図**
 ***
-※ 作成中
+- [draw.io](https://drive.google.com/file/d/1RPY7pD55QjHvsak7d6NMs2l2l9Xc9SoC/view?usp=sharing)   
+
+   [![Image from Gyazo](https://i.gyazo.com/bd1b5d0b2f38323c4291ba0cfe482ebe.png)](https://drive.google.com/file/d/1RPY7pD55QjHvsak7d6NMs2l2l9Xc9SoC/view?usp=sharing)
 **■ その他**
 ***
 - READEMEの作成：02/01
