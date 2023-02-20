@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  summary: MyText
+  start_at: 2023-02-19
+  end_at: 2023-02-19
+  eye_catching: MyString
+  permission: MyString
+  invite_link: MyString
+
+two:
+  title: MyString
+  summary: MyText
+  start_at: 2023-02-19
+  end_at: 2023-02-19
+  eye_catching: MyString
+  permission: MyString
+  invite_link: MyString

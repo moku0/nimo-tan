@@ -1,0 +1,1454 @@
+Started GET "/" for ::1 at 2023-02-19 12:27:22 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/higuchinaoya/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/higuchinaoya/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.9ms | Allocations: 585)
+Completed 200 OK in 7ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 4651)
+
+
+Started GET "/b" for ::1 at 2023-02-19 12:27:32 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/b"):
+  
+Started GET "/g" for ::1 at 2023-02-19 12:29:03 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/g"):
+  
+Started GET "/" for ::1 at 2023-02-19 12:29:33 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/higuchinaoya/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/higuchinaoya/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.6ms | Allocations: 280)
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 888)
+
+
+Started GET "/top" for ::1 at 2023-02-19 13:58:57 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/top"):
+  
+Started GET "/" for ::1 at 2023-02-19 15:33:14 +0900
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230219055206_create_events.rb
+
+
+):
+  
+activerecord (7.0.4.2) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4.2) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4.2) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4.2) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateEvents (20230219055206)
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateEvents (20230219055206)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "events" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar NOT NULL, "summary" text, "start_at" date NOT NULL, "end_at" date NOT NULL, "eye_catching" varchar, "permission" varchar, "invite_link" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230219055206"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-02-19 06:35:48.211283"], ["updated_at", "2023-02-19 06:35:48.211283"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2023-02-19 15:36:01 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/higuchinaoya/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/higuchinaoya/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.5ms | Allocations: 477)
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 3324)
+
+
+Started GET "/event" for ::1 at 2023-02-19 15:36:11 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/event"):
+  
+Started GET "/events" for ::1 at 2023-02-19 15:36:24 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/events"):
+  
+Started GET "/events/index" for ::1 at 2023-02-19 15:36:29 +0900
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 161.6ms | Allocations: 90928)
+Completed 200 OK in 164ms (Views: 162.7ms | ActiveRecord: 0.0ms | Allocations: 91901)
+
+
+Started GET "/events/index" for ::1 at 2023-02-19 17:57:46 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20230219084604_create_users.rb
+
+
+):
+  
+activerecord (7.0.4.2) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.4.2) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.4.2) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.4.2) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20230219084604)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "icon" varchar, "email" varchar, "role" varchar, "crypted_password" varchar, "salt" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230219084604"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/events/index" for ::1 at 2023-02-19 17:58:27 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 292)
+  Rendered layout layouts/application.html.erb (Duration: 40.8ms | Allocations: 35786)
+Completed 200 OK in 44ms (Views: 42.1ms | ActiveRecord: 0.0ms | Allocations: 38785)
+
+
+Started GET "/events/index" for ::1 at 2023-02-19 17:59:49 +0900
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2731)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 4414)
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 5268)
+
+
+Started GET "/events/index" for ::1 at 2023-02-19 17:59:51 +0900
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2283)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 3782)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 4064)
+
+
+Started GET "/events/index" for ::1 at 2023-02-19 17:59:53 +0900
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2283)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 3781)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 4037)
+
+
+Started GET "/events/index" for ::1 at 2023-02-19 17:59:54 +0900
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 2283)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 3782)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 4042)
+
+
+Started GET "/events/index" for ::1 at 2023-02-19 17:59:56 +0900
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2286)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 3785)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 4045)
+
+
+Started GET "/events/index" for ::1 at 2023-02-19 18:00:03 +0900
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2265)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 3763)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 4019)
+
+
+Started GET "/events/index" for ::1 at 2023-02-19 18:00:31 +0900
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2731)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 4413)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 5209)
+
+
+Started GET "/events/index" for ::1 at 2023-02-19 18:00:34 +0900
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2274)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 3772)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 4047)
+
+
+Started GET "/events/index" for ::1 at 2023-02-19 18:00:34 +0900
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2283)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 3781)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 4037)
+
+
+Started GET "/events/index" for ::1 at 2023-02-19 18:00:34 +0900
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2286)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 3784)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 4040)
+
+
+Started GET "/events/index" for ::1 at 2023-02-19 18:00:34 +0900
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2265)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 3763)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 4019)
+
+
+Started GET "/events/index" for ::1 at 2023-02-19 18:00:46 +0900
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 113)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 2907)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 3702)
+
+
+Started GET "/events/index" for ::1 at 2023-02-19 18:00:46 +0900
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 2365)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 2640)
+
+
+Started GET "/events/index" for ::1 at 2023-02-19 18:00:47 +0900
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 2359)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 2615)
+
+
+Started GET "/events/index" for ::1 at 2023-02-19 18:00:47 +0900
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 2371)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 2627)
+
+
+Started GET "/events/index" for ::1 at 2023-02-20 08:24:05 +0900
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 2350)
+Completed 200 OK in 18ms (Views: 15.5ms | Allocations: 2603)
+
+
+Started GET "/events/index" for ::1 at 2023-02-20 08:24:06 +0900
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 2347)
+Completed 200 OK in 7ms (Views: 5.7ms | Allocations: 2600)
+
+
+Started GET "/" for ::1 at 2023-02-20 08:25:42 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/higuchinaoya/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/higuchinaoya/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.1ms | Allocations: 288)
+Completed 200 OK in 3ms (Views: 1.8ms | Allocations: 1048)
+
+
+Started GET "/events/index" for ::1 at 2023-02-20 08:26:09 +0900
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  Rendered events/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 113)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 2934)
+Completed 200 OK in 12ms (Views: 10.2ms | Allocations: 3761)
+
+
+Started GET "/events/inde" for ::1 at 2023-02-20 08:35:44 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/events/inde"):
+  
+Started GET "/events/inde" for ::1 at 2023-02-20 08:47:03 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/events/inde"):
+  
+Started GET "/events/inde" for ::1 at 2023-02-20 08:47:04 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/events/inde"):
+  
+Started GET "/" for ::1 at 2023-02-20 08:47:08 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 37.0ms | Allocations: 35461)
+Completed 200 OK in 43ms (Views: 38.4ms | ActiveRecord: 0.0ms | Allocations: 37505)
+
+
+Started GET "/" for ::1 at 2023-02-20 09:24:13 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 284)
+  Rendered layout layouts/application.html.erb (Duration: 1096.7ms | Allocations: 181594)
+Completed 200 OK in 1100ms (Views: 1097.9ms | ActiveRecord: 0.0ms | Allocations: 184607)
+
+
+Started GET "/" for ::1 at 2023-02-20 09:38:42 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 114)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 5947)
+Completed 200 OK in 13ms (Views: 11.8ms | Allocations: 6790)
+
+
+Started GET "/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:38:42 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:38:43 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 5558)
+Completed 200 OK in 11ms (Views: 10.3ms | Allocations: 5855)
+
+
+Started GET "/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:38:43 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:38:44 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 5401)
+Completed 200 OK in 12ms (Views: 10.7ms | Allocations: 5658)
+
+
+Started GET "/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:38:44 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:38:44 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 5413)
+Completed 200 OK in 7ms (Views: 6.8ms | Allocations: 5666)
+
+
+Started GET "/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:38:44 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:38:44 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 5388)
+Completed 200 OK in 12ms (Views: 11.5ms | Allocations: 5642)
+
+
+Started GET "/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:38:44 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:38:44 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 5401)
+Completed 200 OK in 8ms (Views: 7.6ms | Allocations: 5654)
+
+
+Started GET "/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:38:44 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:38:45 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 5392)
+Completed 200 OK in 9ms (Views: 8.6ms | Allocations: 5645)
+
+
+Started GET "/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:38:45 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:39:44 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 5959)
+Completed 200 OK in 15ms (Views: 13.2ms | Allocations: 6741)
+
+
+Started GET "/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:39:44 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:39:45 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 5410)
+Completed 200 OK in 9ms (Views: 8.4ms | Allocations: 5681)
+
+
+Started GET "/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:39:45 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:41:20 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 5968)
+Completed 200 OK in 12ms (Views: 11.2ms | Allocations: 6757)
+
+
+Started GET "/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:41:20 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:41:20 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 5399)
+Completed 200 OK in 11ms (Views: 10.5ms | Allocations: 5670)
+
+
+Started GET "/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:41:20 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:41:20 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 5393)
+Completed 200 OK in 5ms (Views: 4.8ms | Allocations: 5647)
+
+
+Started GET "/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:41:20 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:41:21 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 5393)
+Completed 200 OK in 13ms (Views: 12.0ms | Allocations: 5646)
+
+
+Started GET "/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:41:21 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:41:46 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 114)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 5964)
+Completed 200 OK in 13ms (Views: 11.9ms | Allocations: 6746)
+
+
+Started GET "/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:41:46 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:41:47 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 5398)
+Completed 200 OK in 9ms (Views: 8.7ms | Allocations: 5669)
+
+
+Started GET "/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:41:47 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:41:47 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 5410)
+Completed 200 OK in 9ms (Views: 8.1ms | Allocations: 5663)
+
+
+Started GET "/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:41:47 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:41:47 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 5413)
+Completed 200 OK in 11ms (Views: 10.1ms | Allocations: 5667)
+
+
+Started GET "/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:41:47 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:42:17 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 114)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 5976)
+Completed 200 OK in 12ms (Views: 11.1ms | Allocations: 6757)
+
+
+Started GET "/img/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:42:17 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/img/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:42:17 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 5410)
+Completed 200 OK in 11ms (Views: 10.6ms | Allocations: 5681)
+
+
+Started GET "/img/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:42:17 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/img/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:42:17 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 5407)
+Completed 200 OK in 6ms (Views: 5.1ms | Allocations: 5660)
+
+
+Started GET "/img/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:42:17 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/img/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:42:17 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 5404)
+Completed 200 OK in 4ms (Views: 4.2ms | Allocations: 5658)
+
+
+Started GET "/img/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:42:18 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/img/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:44:17 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 114)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 6064)
+Completed 200 OK in 12ms (Views: 10.9ms | Allocations: 6846)
+
+
+Started GET "/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:44:17 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:46:23 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 114)
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 6013)
+Completed 200 OK in 20ms (Views: 18.8ms | Allocations: 6813)
+
+
+Started GET "/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:46:23 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:46:24 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 5455)
+Completed 200 OK in 13ms (Views: 11.8ms | Allocations: 5726)
+
+
+Started GET "/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:46:24 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:46:25 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 5392)
+Completed 200 OK in 12ms (Views: 10.7ms | Allocations: 5645)
+
+
+Started GET "/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:46:25 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:47:03 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 114)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 5936)
+Completed 200 OK in 14ms (Views: 12.8ms | Allocations: 6717)
+
+
+Started GET "/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:47:03 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:47:04 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 5501)
+Completed 200 OK in 16ms (Views: 15.3ms | Allocations: 5773)
+
+
+Started GET "/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:47:04 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:47:04 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 5501)
+Completed 200 OK in 6ms (Views: 5.4ms | Allocations: 5754)
+
+
+Started GET "/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:47:04 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:47:04 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 5445)
+Completed 200 OK in 10ms (Views: 9.7ms | Allocations: 5698)
+
+
+Started GET "/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:47:04 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:47:56 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 5394)
+Completed 200 OK in 11ms (Views: 10.6ms | Allocations: 5647)
+
+
+Started GET "/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:47:56 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:47:56 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 5486)
+Completed 200 OK in 11ms (Views: 10.1ms | Allocations: 5740)
+
+
+Started GET "/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:47:56 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:47:56 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 5486)
+Completed 200 OK in 7ms (Views: 6.5ms | Allocations: 5739)
+
+
+Started GET "/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:47:56 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:47:57 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 5463)
+Completed 200 OK in 11ms (Views: 10.0ms | Allocations: 5716)
+
+
+Started GET "/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:47:57 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:47:57 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 5373)
+Completed 200 OK in 9ms (Views: 8.6ms | Allocations: 5626)
+
+
+Started GET "/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:47:57 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/Nimotan_Top_logo.png"):
+  
+Started GET "/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:47:58 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:48:24 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 6053)
+Completed 200 OK in 15ms (Views: 12.2ms | Allocations: 6835)
+
+
+Started GET "/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:48:24 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:48:32 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 5997)
+Completed 200 OK in 14ms (Views: 12.1ms | Allocations: 6796)
+
+
+Started GET "/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:48:32 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:48:55 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 110)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 6072)
+Completed 200 OK in 13ms (Views: 11.8ms | Allocations: 6873)
+
+
+Started GET "/app/assets/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:48:55 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:48:56 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 5388)
+Completed 200 OK in 9ms (Views: 8.2ms | Allocations: 5659)
+
+
+Started GET "/app/assets/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:48:56 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:48:56 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 5482)
+Completed 200 OK in 10ms (Views: 9.7ms | Allocations: 5736)
+
+
+Started GET "/app/assets/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:48:56 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:48:56 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 5513)
+Completed 200 OK in 10ms (Views: 9.4ms | Allocations: 5767)
+
+
+Started GET "/app/assets/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:48:56 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:48:57 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 5501)
+Completed 200 OK in 10ms (Views: 9.4ms | Allocations: 5755)
+
+
+Started GET "/app/assets/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:48:57 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:48:57 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 5484)
+Completed 200 OK in 10ms (Views: 9.3ms | Allocations: 5738)
+
+
+Started GET "/app/assets/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:48:57 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:48:57 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 5489)
+Completed 200 OK in 9ms (Views: 8.6ms | Allocations: 5743)
+
+
+Started GET "/app/assets/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:48:57 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:48:57 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 5492)
+Completed 200 OK in 10ms (Views: 9.5ms | Allocations: 5746)
+
+
+Started GET "/app/assets/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:48:57 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:49:52 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 6056)
+Completed 200 OK in 11ms (Views: 10.3ms | Allocations: 6838)
+
+
+Started GET "/app/assets/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:49:52 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:50:03 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 6068)
+Completed 200 OK in 15ms (Views: 13.5ms | Allocations: 6868)
+
+
+Started GET "/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:50:03 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 09:51:23 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 2122)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 2210)
+Completed 500 Internal Server Error in 10ms (Allocations: 2997)
+
+
+  
+ActionView::Template::Error (The asset "images/Nimotan_Top_logo.png" is not present in the asset pipeline.
+):
+    1: <h1>Top#index</h1>
+    2: <p>Find me in app/views/top/index.html.erb</p>
+    3: <img src= "/images/Nimotan_Top_logo.png" alt="aa">
+    4: <%= image_tag 'images/Nimotan_Top_logo.png', class: 'hoge' %>
+  
+app/views/top/index.html.erb:4
+Started GET "/" for ::1 at 2023-02-20 09:51:42 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 206)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 6125)
+Completed 200 OK in 14ms (Views: 12.1ms | Allocations: 6925)
+
+
+Started GET "/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 09:51:42 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 17:15:49 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 5542)
+Completed 200 OK in 19ms (Views: 17.7ms | Allocations: 5815)
+
+
+Started GET "/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 17:15:49 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 17:15:50 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 5539)
+Completed 200 OK in 10ms (Views: 8.9ms | Allocations: 5793)
+
+
+Started GET "/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 17:15:50 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 17:15:50 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 5533)
+Completed 200 OK in 4ms (Views: 3.8ms | Allocations: 5787)
+
+
+Started GET "/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 17:15:50 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 17:15:50 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 5563)
+Completed 200 OK in 9ms (Views: 8.8ms | Allocations: 5818)
+
+
+Started GET "/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 17:15:50 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 17:23:16 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 217)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 6148)
+Completed 200 OK in 14ms (Views: 12.7ms | Allocations: 6931)
+
+
+Started GET "/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 17:23:16 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 17:23:44 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 214)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 6148)
+Completed 200 OK in 13ms (Views: 12.0ms | Allocations: 6948)
+
+
+Started GET "/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 17:23:45 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 17:23:45 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 5543)
+Completed 200 OK in 10ms (Views: 9.1ms | Allocations: 5816)
+
+
+Started GET "/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 17:23:45 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 17:24:03 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 200)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 6123)
+Completed 200 OK in 12ms (Views: 11.0ms | Allocations: 6906)
+
+
+Started GET "/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 17:24:03 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 17:24:04 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 5538)
+Completed 200 OK in 9ms (Views: 8.3ms | Allocations: 5811)
+
+
+Started GET "/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 17:24:04 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 17:24:15 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 2105)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 2193)
+Completed 500 Internal Server Error in 7ms (Allocations: 2947)
+
+
+  
+ActionView::Template::Error (The asset "images/Nimotan_Top_logo.png" is not present in the asset pipeline.
+):
+    1: <h1>Top#index</h1>
+    2: <p>Find me in app/views/top/index.html.erb</p>
+    3: <img src= "/images/Nimotan_Top_logo.png" alt="aa">
+    4: <%= image_tag 'images/Nimotan_Top_logo.png'%>
+    5: <p>開始</p>
+    6: <p>使い方を見る</p>
+  
+app/views/top/index.html.erb:4
+Started GET "/" for ::1 at 2023-02-20 17:24:16 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1902)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 1981)
+Completed 500 Internal Server Error in 4ms (Allocations: 2229)
+
+
+  
+ActionView::Template::Error (The asset "images/Nimotan_Top_logo.png" is not present in the asset pipeline.
+):
+    1: <h1>Top#index</h1>
+    2: <p>Find me in app/views/top/index.html.erb</p>
+    3: <img src= "/images/Nimotan_Top_logo.png" alt="aa">
+    4: <%= image_tag 'images/Nimotan_Top_logo.png'%>
+    5: <p>開始</p>
+    6: <p>使い方を見る</p>
+  
+app/views/top/index.html.erb:4
+Started GET "/" for ::1 at 2023-02-20 17:25:53 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 40.1ms | Allocations: 46437)
+  Rendered layout layouts/application.html.erb (Duration: 45.5ms | Allocations: 52012)
+Completed 200 OK in 48ms (Views: 47.1ms | Allocations: 52793)
+
+
+Started GET "/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 17:25:53 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 17:25:54 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 582)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 5827)
+Completed 200 OK in 10ms (Views: 9.1ms | Allocations: 6098)
+
+
+Started GET "/images/Nimotan_Top_logo.png" for ::1 at 2023-02-20 17:25:54 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/images/Nimotan_Top_logo.png"):
+  
+Started GET "/" for ::1 at 2023-02-20 17:26:12 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 861)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 6433)
+Completed 200 OK in 11ms (Views: 10.3ms | Allocations: 7215)
+
+
+Started GET "/" for ::1 at 2023-02-20 17:26:21 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 858)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 6413)
+Completed 200 OK in 12ms (Views: 10.5ms | Allocations: 7218)
+
+
+Started GET "/" for ::1 at 2023-02-20 17:26:32 +0900
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 851)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 6397)
+Completed 200 OK in 11ms (Views: 10.0ms | Allocations: 7202)
+
+
+DEPRECATION WARNING: ActiveRecord::Base.timestamped_migrations is deprecated and will be removed in Rails 7.1.
+Use `ActiveRecord.timestamped_migrations` instead.
+ (called from <main> at bin/rails:4)
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20230219084604)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20230219084604"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20230219084604)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar NOT NULL, "icon" varchar, "role" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230219084604"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to SorceryCore (20230220084358)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar NOT NULL, "crypted_password" varchar, "salt" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to SorceryCore (20230220084358)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar NOT NULL, "crypted_password" varchar, "salt" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to SorceryCore (20230220084358)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar NOT NULL, "crypted_password" varchar, "salt" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateEvents (20230219055206)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "events" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar NOT NULL, "summary" text, "start_at" date NOT NULL, "end_at" date NOT NULL, "eye_catching" varchar, "permission" varchar, "invite_link" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230219055206"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateUsers (20230219084604)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar NOT NULL, "icon" varchar, "role" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230219084604"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to SorceryCore (20230220084358)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar NOT NULL, "crypted_password" varchar, "salt" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to SorceryCore (20230220084358)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar NOT NULL, "crypted_password" varchar, "salt" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+DEPRECATION WARNING: ActiveRecord::Base.timestamped_migrations is deprecated and will be removed in Rails 7.1.
+Use `ActiveRecord.timestamped_migrations` instead.
+ (called from <main> at bin/rails:4)
+DEPRECATION WARNING: ActiveRecord::Base.timestamped_migrations is deprecated and will be removed in Rails 7.1.
+Use `ActiveRecord.timestamped_migrations` instead.
+ (called from <main> at bin/rails:4)
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to SorceryCore (20230220091627)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar NOT NULL, "crypted_password" varchar, "salt" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20230219084604)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.0ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20230219084604"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: ActiveRecord::Base.timestamped_migrations is deprecated and will be removed in Rails 7.1.
+Use `ActiveRecord.timestamped_migrations` instead.
+ (called from <main> at bin/rails:4)
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to SorceryCore (20230220092018)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar NOT NULL, "icon" varchar, "email" varchar NOT NULL, "role" varchar NOT NULL, "crypted_password" varchar, "salt" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to SorceryCore (20230220092018)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar NOT NULL, "icon" varchar, "email" varchar NOT NULL, "role" varchar NOT NULL, "crypted_password" varchar, "salt" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "events"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "events" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar NOT NULL, "summary" text, "start_at" date NOT NULL, "end_at" date NOT NULL, "eye_catching" varchar, "permission" varchar, "invite_link" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20230219055206)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-02-20 09:25:27.903426"], ["updated_at", "2023-02-20 09:25:27.903426"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "4732854efdedcbfac95789d2e998309aab93e851"], ["created_at", "2023-02-20 09:25:27.905631"], ["updated_at", "2023-02-20 09:25:27.905631"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "events"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "events" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar NOT NULL, "summary" text, "start_at" date NOT NULL, "end_at" date NOT NULL, "eye_catching" varchar, "permission" varchar, "invite_link" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20230219055206)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-02-20 09:25:27.909803"], ["updated_at", "2023-02-20 09:25:27.909803"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.1ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2023-02-20 09:25:27.911183"], ["key", "environment"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "4732854efdedcbfac95789d2e998309aab93e851"], ["created_at", "2023-02-20 09:25:27.912540"], ["updated_at", "2023-02-20 09:25:27.912540"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateEvents (20230219055206)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "events" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar NOT NULL, "summary" text, "start_at" date NOT NULL, "end_at" date NOT NULL, "eye_catching" varchar, "permission" varchar, "invite_link" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230219055206"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to SorceryCore (20230220092018)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar NOT NULL, "icon" varchar, "email" varchar NOT NULL, "role" varchar NOT NULL, "crypted_password" varchar, "salt" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to SorceryCore (20230220092018)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar NOT NULL, "icon" varchar, "email" varchar NOT NULL, "role" varchar NOT NULL, "crypted_password" varchar, "salt" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to SorceryCore (20230220092018)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar NOT NULL, "icon" varchar, "email" varchar NOT NULL, "role" varchar NOT NULL, "crypted_password" varchar, "salt" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230220092018"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-02-20 09:26:34.856756"], ["updated_at", "2023-02-20 09:26:34.856756"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2023-02-20 18:47:32 +0900
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TopController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 29.8ms | Allocations: 46342)
+  Rendered layout layouts/application.html.erb (Duration: 38.2ms | Allocations: 63768)
+Completed 200 OK in 43ms (Views: 39.7ms | ActiveRecord: 0.0ms | Allocations: 66823)
+
+
+Started GET "/login" for ::1 at 2023-02-20 18:47:38 +0900
+Processing by UserSessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user_sessions/new.html.erb within layouts/application
+  Rendered user_sessions/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 5771)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 6519)
+
+
