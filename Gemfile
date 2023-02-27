@@ -43,8 +43,10 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 
 
-gem 'bootstrap', '~> 4.3.1'
+gem 'bootstrap'
 gem 'font-awesome-sass', '~> 5.15.1'
+gem 'jquery-rails'
+gem 'font-awesome-rails'
 
 # Magical Authentication for Rails
 gem 'sorcery'

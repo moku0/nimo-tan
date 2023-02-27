@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
+  resources :password_resets
   get 'user_sessions/new'
   get 'user_sessions/create'
   get 'users/new'
   get 'users/create'
   root 'top#index'
+  get 'top/about'
+  get 'top/home'
   get 'events/index'
   get 'events/show'
   get 'events/new'

@@ -1,6 +1,49 @@
-<h1>Events#index</h1>
-<p>Find me in app/views/events/index.html.erb</p>
-<p> </p>
-<p> イベント一覧を表示する </P>
-<p> 「これから」のイベントと 「これまで」のイベントに分けて表示し、 </P>
-<p> 日付とイベント名を表示する </p>
+<header>
+  <nav class="navbar navbar-expand-lg navigation navbar-light bg-light">
+
+    <%= link_to root_path, class: 'navbar-brand' do %>
+      <%= image_tag 'Top_logo.png' %>
+    <% end %>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto main-nav align-items-center">
+        <li class="nav-item dropdown dropdown-slide">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            使い方
+          </a>
+
+          <div class="dropdown-menu dropdown-menu-right">
+            <%= link_to '掲示板一覧', '#', class: 'dropdown-item' %>
+            <%= link_to '掲示板作成', '#', class: 'dropdown-item' %>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <%= link_to 'ブックマーク一覧', '#', class: 'nav-link' %>
+        </li>
+
+        <li class="nav-item dropdown dropdown-slide">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="header-profile">
+            <%= image_tag 'Top_logo.png', size: '40x40', class: 'rounded-circle mr15'%>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <div class="dropdown-item">らんてっく たろう</div>
+            <div class="dropdown-divider"></div>
+            <%= link_to 'プロフィール', '#', class: 'dropdown-item' %>
+
+            <%= link_to 'ログアウト', '#', class: 'dropdown-item' %>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<p>プロフィール</p>
+<p>通知</p>
+<p>イベント</p>
+<p>ガレージ</p>
+<p>ほしいもの</p>
+<p>情報</p>
